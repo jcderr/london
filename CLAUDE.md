@@ -1,5 +1,6 @@
 Property Analysis Instructions
 Context: I'm considering a job in London requiring commute to Kings Cross/Euston 3 times per week. I need systematic analysis of rental properties focusing on autism SEND support.
+
 Required Analysis for Each Property:
 1. Extract Property Details
 
@@ -11,8 +12,7 @@ Source link
 2. Research & Analyze Five Key Areas
 Schools (Weight: HIGH PRIORITY)
 
-Secondary schools with autism SEND support within reasonable distance
-Specialist autism schools vs mainstream with SEND provisions
+Mainstream secondary schools with autism SEND support within reasonable distance
 Ofsted ratings and student-teacher ratios for SEND
 Local authority SEND reputation and recent performance
 Resource bases, autism support teams, transition support
@@ -63,7 +63,7 @@ Include any warning flags about SEND provision failures or area issues
 
 5. Key Principles
 
-Autism SEND support is the highest priority - excellent specialist provision can outweigh other factors
+Autism SEND support is the highest priority - excellent provision can outweigh other factors
 Total monthly cost matters more than rent alone - always calculate rent + commute
 Be honest about trade-offs - don't sugar-coat difficult parking or long commutes
 Flag risks and concerns - highlight any red flags about schools or areas
