@@ -16,9 +16,10 @@ For each property evaluation, provide:
 
 **Target Schools (in priority order):**
 1. **Milton Keynes Academy** (MK6 5LA) - 6:1 ratio, 540 spare places, catchment priority
-2. **Radcliffe School** (MK12 5BT) - 15-place autism ARP, PAN 270, Good SEND
-3. **Shenley Brook End School** (MK5 7ZT) - PAN 300, wellbeing hub
-4. **Denbigh School** (MK5 6EX) - Top performer but heavily oversubscribed
+2. **St Paul's Catholic School** (MK6 5EN) - Dedicated autism ARP
+3. **Radcliffe School** (MK12 5BT) - 15-place autism ARP, PAN 270, Good SEND
+4. **Shenley Brook End School** (MK5 7ZT) - PAN 300, wellbeing hub
+5. **Denbigh School** (MK5 6EX) - Top performer but heavily oversubscribed
 
 **Required Analysis:**
 - Exact straight-line distance from property to each target school (using mapping tools)
