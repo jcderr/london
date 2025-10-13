@@ -1,72 +1,144 @@
-Property Analysis Instructions
-Context: I'm considering a job in London requiring commute to Kings Cross/Euston 3 times per week. I need systematic analysis of rental properties focusing on autism SEND support.
+# UK Family Relocation: Property Evaluation System
 
-Required Analysis for Each Property:
-1. Extract Property Details
+## Purpose
 
-Location (postcode/area)
-Monthly rent
-Bedrooms
-Source link
+This repository contains specialized evaluation frameworks for analyzing UK rental properties for a family relocating in January/February 2026, with particular focus on mid-year school admissions and autism SEND support.
 
-2. Research & Analyze Five Key Areas
-Schools (Weight: HIGH PRIORITY)
+## Family Context
 
-Mainstream secondary schools with autism SEND support within reasonable distance
-Ofsted ratings and student-teacher ratios for SEND
-Local authority SEND reputation and recent performance
-Resource bases, autism support teams, transition support
+- **Children:**
+  - 12-year-old son with autism (Year 7 mid-year entry)
+  - 10-year-old daughter (Year 5 mid-year entry)
+- **Move date:** January/February 2026
+- **Key priorities:** Autism support, mid-year school placement, safe neighborhoods
 
-Commute Analysis
+---
 
-Route options to Kings Cross AND Euston stations
-Journey time during peak hours (door-to-door)
-Annual season ticket cost (current 2025 rates)
-Service frequency and reliability
-Calculate total monthly housing cost (rent + commute ÷ 12)
+## How to Use This System
 
-Car Ownership Feasibility
+**Based on your evaluation needs, I will route you to the appropriate specialized framework:**
 
-Parking availability and costs (permits, restrictions)
-Local driving conditions and necessity for errands
-Public transport alternatives for daily needs
-Rate as: Excellent/Good/Challenging/Very Difficult
+### 1. Evaluating Commuter Towns (General Location Research)
 
-Family Activities
+**Use when:** Researching towns/cities within commuting distance to a job location, comparing multiple broad locations.
 
-Ice hockey: Local professional/semi-pro teams, recreational adult leagues, rink locations
-Nerdy culture: Comic book shops, D&D/gaming stores, board game cafes, geek community venues, movie theaters
-Distance and transport access to these activities
+**Framework:** `/commuter-town-evaluations/CLAUDE.md`
 
-Area Context
+**Best for:**
+- Comparing multiple towns/cities (e.g., "Should I consider St Albans, Bedford, or Luton?")
+- Understanding education systems in different areas
+- Broad-level filtering before property searching
+- Multi-location comparison to identify strongest prospects
 
-Local community character and safety
-Ongoing developments/regeneration affecting quality of life
-Any red flags or concerns
+**Key features:**
+- Single location deep analysis OR multi-location comparison modes
+- Deal-breaker identification (grammar school areas, crime rates, school distance)
+- Secondary AND primary school assessment
+- Neighborhood profiling with crime statistics
 
-3. Output Format
-Create a systematic comparison showing:
+---
 
-Summary table with total monthly costs ranked low to high
-Detailed analysis for each property covering all five areas
-Trade-off analysis highlighting key decisions (cost vs commute, specialist schools vs convenience, etc.)
-Rankings by different priorities (best value, best schools, best commute, etc.)
-Final recommendations with clear reasoning for top 2-3 choices
+### 2. Evaluating Specific Properties in Milton Keynes
 
-4. Research Instructions
+**Use when:** Analyzing specific rental listings in Milton Keynes with full addresses/postcodes.
 
-Use web search for current information on schools, transport, and local amenities
-Prioritize official sources (Ofsted, local authorities, transport operators)
-Look for recent developments in SEND provision and area changes
-Cross-reference multiple sources for transport costs and times
-Include any warning flags about SEND provision failures or area issues
+**Framework:** `/milton-keynes-properties/CLAUDE.md`
 
-5. Key Principles
+**Best for:**
+- Detailed analysis of specific rental properties
+- Exact catchment verification for Milton Keynes schools
+- Distance calculations to target schools (Milton Keynes Academy, Radcliffe School, etc.)
+- Amenity mapping (pubs, shops, healthcare within walking distance)
 
-Autism SEND support is the highest priority - excellent provision can outweigh other factors
-Total monthly cost matters more than rent alone - always calculate rent + commute
-Be honest about trade-offs - don't sugar-coat difficult parking or long commutes
-Flag risks and concerns - highlight any red flags about schools or areas
-Provide clear decision framework - help prioritize based on what matters most
+**Key features:**
+- Targets 4 specific secondary schools with known autism provision
+- Primary school mid-year admission likelihood assessment
+- Postcode-level crime statistics
+- Walking distance amenity mapping
+- Clear proceed/no-proceed verdicts
 
-Expected Output: Comprehensive analysis enabling informed decision-making with clear pros/cons for each option and strong final recommendations based on stated priorities.
+---
+
+### 3. Evaluating Properties Across the UK (Any Location)
+
+**Use when:** Analyzing specific properties outside Milton Keynes, in any UK location.
+
+**Framework:** `/uk-wide-location-evaluations/CLAUDE.md`
+
+**Best for:**
+- Properties anywhere in England, Scotland, Wales
+- Understanding unfamiliar local authority education systems
+- Researching selective (grammar) vs. comprehensive areas
+- SEND provision across different local authorities
+
+**Key features:**
+- Comprehensive area context (education system type, EHCP processing)
+- Local authority SEND service assessment
+- Cost of living comparisons
+- Detailed scoring rubric (1-10 scale with clear criteria)
+- Transport infrastructure analysis
+
+---
+
+## Automatic Routing Logic
+
+When you provide property information or research requests, I will automatically select the appropriate framework:
+
+**If you say:** "Evaluate properties in Stevenage, Luton, and Bedford"
+**→ I use:** `commuter-town-evaluations` (multi-location comparison)
+
+**If you say:** "Analyze 23 Acorn Drive, Milton Keynes, MK6 3AR"
+**→ I use:** `milton-keynes-properties` (specific MK property)
+
+**If you say:** "What about this flat in Bristol at BS5 9XX?"
+**→ I use:** `uk-wide-location-evaluations` (property outside MK)
+
+---
+
+## What Information to Provide
+
+### For Town/City Comparisons:
+- Town/city names or general areas
+- Optional: specific neighborhoods or postcodes for focused research
+
+### For Specific Properties:
+- Full address (street name, house number)
+- Postcode
+- Optional: bedrooms, rent, listing link
+
+---
+
+## Universal Deal-Breakers
+
+Regardless of framework used, these are automatic disqualifiers:
+
+1. No viable secondary school within 3 miles
+2. Nearest primary school rated Inadequate by Ofsted
+3. Crime rate >50% above local authority average with increasing trend
+4. No grocery store within 1 mile walking distance
+
+---
+
+## Expected Outputs
+
+All frameworks provide:
+- ✅ Clear proceed/reconsider/eliminate recommendations
+- ✅ School-by-school distance and admission likelihood analysis
+- ✅ Neighborhood safety assessment with crime statistics
+- ✅ Local amenities mapping
+- ✅ Key strengths and concerns highlighted
+- ✅ Specific next actions required
+
+---
+
+## Getting Started
+
+Simply describe your property evaluation need, and I'll route you to the correct framework and begin research.
+
+**Examples:**
+
+"I want to compare Northampton, Peterborough, and Cambridge as potential locations"
+
+"Can you evaluate 15 Simpson Road, Milton Keynes, MK6 2AB?"
+
+"What about properties in York? Here's a listing at YO24 3QQ"
